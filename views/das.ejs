@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu for Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <style>
+        
+    /* Custom styles */
+    .sidebar {
+      background: #11101d;
+      padding: 15px;
+      z-index: 99;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .menu-title {
+      color: #fff;
+      font-size: 14px;
+      padding: 15px 20px;
+    }
+    .navbar {
+      color: #fff;
+      padding: 25px 20px;
+      font-size: 25px;
+      background: #000000;
+      cursor: pointer;
+    }
+    
+    .navbar i{
+      color: white;
+    }
+    
+    ul li a:hover{
+      color: #1dcd1a;
+    }
+    .main {
+      height: 100vh;
+      background: #21df08c3;
+    }
+    .main h1 {
+      color: #11101d;
+      font-size: 40px;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse">
+      <i class="fas fa-bars"></i>
+    </button>
+    <a href="/logout" class="btn btn-danger logout-btn">Logout</a>
+  </nav>
+
+  <div class="collapse" id="sidebarCollapse">
+    <nav class="sidebar">
+      <a href="#" class="navbar-brand">Admin</a>
+      <div class="menu-content">
+        <ul class="nav flex-column">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/das">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/view-courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <!-- <div class="menu-title">Your menu title</div> -->
+            <a class="nav-link" href="/select">Registeration list</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main class="main" style="display: grid; place-items: center;">
+    <h1>WELCOM BACK</h1>
+  </main>
+
+  <!-- Bootstrap JS and dependencies (jQuery) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
